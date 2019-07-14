@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<title>あなたのことを教えてください</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Osamu Kurosawa">
+		<link rel="stylesheet" type="text/css" href="./kadai04.css">
+	</head>
+	<body>
+		<form action="./kadai04_view.php" method="post">
+			<label>氏名：</label>
+			<input type="textbox" name="namae" maxlength="15"/>
+			<br/>
+			<label>性別：</label>
+			<input type="radio" name="gender" value="0"/>男性
+			<input type="radio" name="gender" value="1"/>女性
+			<br/>
+			<label>趣味：</label>
+			<input type="checkbox" name="hobby[]" value="読書"/>読書
+			<input type="checkbox" name="hobby[]" value="ゲーム"/>ゲーム
+			<input type="checkbox" name="hobby[]" value="映画鑑賞"/>映画鑑賞
+			<input type="checkbox" name="hobby[]" value="スポーツ"/>スポーツ
+			<input type="checkbox" name="hobby[]" value="旅行"/>旅行
+			<br/>
+			<label>血液型：</label>
+			<select name="blood">
+				<option value="">選択してください</option>
+				<option value="A型">A型</option>
+				<option value="B型">B型</option>
+				<option value="O型">O型</option>
+				<option value="AB型">AB型</option>
+			</select>
+			<br/>
+
+			<input type="submit" class="blue-button" name="submit" value="送信"/>
+
+
+		</form>
+	</body>
+</html>
